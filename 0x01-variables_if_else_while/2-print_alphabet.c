@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include <ctype.h>
+#include <string.h>
 /**
  * main - Entry point
  * Description: 'this program prints the alphabet in lowercase'

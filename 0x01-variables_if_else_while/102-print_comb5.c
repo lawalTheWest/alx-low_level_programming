@@ -12,9 +12,9 @@ int main(void)
 {
 	int n1,  n2;
 
-	for (n1 = 0; n1 < 100; n1++)
+	for (n1 = 0; n1 <= 99; n1++)
 	{
-		for (n2 = 1; n2 < 100; n2++)
+		for (n2 = 0; n2 <= 99; n2++)
 		{
 			/* Print the first number */
 			putchar('0' + n1 / 10);

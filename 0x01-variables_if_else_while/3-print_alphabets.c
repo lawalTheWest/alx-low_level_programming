@@ -15,7 +15,7 @@ int main(void)
 	for (j = 'A'; j <= 'Z'; j++)
 	{
 		putchar(tolower(j));
-        }
+	}
 	for (j = 'A'; j <= 'Z'; j++)
 	{
 		putchar(toupper(j));

@@ -11,8 +11,7 @@
  */
 int main(void)
 {
-	int j;
-	char i = '0';
+	int j, i = '0';
 
 	for (j = '1'; j <= '9'; j++)
 	{

@@ -1,4 +1,3 @@
-#include <stddef.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
@@ -11,16 +10,19 @@
  */
 int main(void)
 {
-	int j, i = '0';
+	int i, j;
 
-	for (j = '1'; j <= '9'; j++)
+	for (i = 0; i < 9; i++)
 	{
-		putchar(i);
-		putchar(j);
-		if (j != '9')
+		for (j = i + 1; j <= 9; j++)
 		{
-			putchar(',');
-			putchar(' ');
+			putchar(i + '0');
+			putchar(j + '0');
+			if (i != 8 || j != 9)
+			{
+				putchar(',');
+				putchar(' ');
+			}
 		}
 	}
 	putchar('\n');

@@ -16,18 +16,21 @@ int main(void)
 	{
 		for (n2 = n1 + 1; n2 <= 99; n2++)
 		{
-			/* Print the first number */
-			putchar('0' + n1 / 10);
-			putchar('0' + n1 % 10);
-			putchar(' ');
-			/* Print the second number */
-			putchar('0' + n2 / 10);
-			putchar('0' + n2 % 10);
-			if (n1 != 99 || n2 != 99)
+			if (n1 != n2)
 			{
-				/* If this is not the last combination, print the separator */
-				putchar(',');
+				/* Print the first number */
+				putchar('0' + n1 / 10);
+				putchar('0' + n1 % 10);
 				putchar(' ');
+				/* Print the second number */
+				putchar('0' + n2 / 10);
+				putchar('0' + n2 % 10);
+				if (n1 != 99 || n2 != 99)
+				{
+					/* If this is not the last combination, print the separator */
+					putchar(',');
+					putchar(' ');
+				}
 			}
 		}
 	}

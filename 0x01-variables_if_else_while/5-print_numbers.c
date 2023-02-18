@@ -10,7 +10,7 @@
  */
 int main(void)
 {
-	int j;
+	int j = 0;
 
 	while (j < 10)
 	{

@@ -25,7 +25,7 @@ int main(void)
 				/* Print the second number */
 				putchar(n2 / 10 + '0');
 				putchar(n2 % 10 + '0');
-				if (n1 != 99 || n2 != 99)
+				if (n1 != 98 || n2 != 99)
 				{
 					/* If this is not the last combination, print the separator */
 					putchar(',');

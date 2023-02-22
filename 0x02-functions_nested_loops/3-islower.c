@@ -3,7 +3,7 @@
 
 /**
  * _islower - Entry point
- * Description: 'The functions checks and return value base on check the values'
+ * Description: 'The functions checks and return value'
  * Return: 1 if int c is lowercase, 0 if otherwise
  */
 int _islower(int c)

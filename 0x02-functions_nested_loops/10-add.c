@@ -12,10 +12,10 @@
  * Return: sum of two numbers
  */
 
-int add(int x, int y)
+int add(int a, int b)
 {
 	int sum;
 
-	sum = x + y;
+	sum = a + b;
 	return (sum);
 }

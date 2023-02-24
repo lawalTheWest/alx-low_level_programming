@@ -1,1 +1,1 @@
-more functions and nested loops
+The more the function the more the knowledge gained

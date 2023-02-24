@@ -1,1 +1,1 @@
-Variables and statements in C
+variables and statements

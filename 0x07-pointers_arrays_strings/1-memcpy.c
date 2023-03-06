@@ -1,7 +1,8 @@
 #include "main.h"
 
 /**
- * *_memcpy - copies memory area
+ * *_memcpy - Entry point
+ * Description: 'copies memory area'
  * @dest: memory area
  * @src: source
  * @n: length of src

@@ -3,7 +3,7 @@
 
 /**
  * *_strstr - Entry point
- * Description: 'searching a string for any of a set of bytes'
+ * Description: 'to locate a substring'
  * @haystack: string
  * @needle: pointer (sub-string)
  * Return: 0 (success)

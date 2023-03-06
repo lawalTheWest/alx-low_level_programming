@@ -1,7 +1,8 @@
 #include "main.h"
 
 /**
- * *_strchr - fills memory with a constant byte.
+ * *_strchr - Entry point 
+ * Description: 'fills memory with a constant byte.'
  * @s: pointer to put the constant
  * @c: constant
  * Return: s

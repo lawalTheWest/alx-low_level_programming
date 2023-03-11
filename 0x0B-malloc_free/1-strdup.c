@@ -1,45 +1,34 @@
 #include "main.h"
 #include <stdlib.h>
-/**
-<<<<<<< HEAD
- *  * _strdup - returns a pointer to a newly allocated space in memory.
- *   * @str: string.
- *    * Return: pointer of an array of chars
- *     */
-char *_strdup(char *str)
-{
-		char *strout;
-			unsigned int i, j;
+#include <stdio.h>
 
-				if (str == NULL)
-							return (NULL);
-					for (i = 0; str[i] != '\0'; i++)
-								;
-						strout = (char *)malloc(sizeof(char) * (i + 1));
-							if (strout == NULL)
-										return (NULL);
-								for (j = 0; j <= i; j++)
-											strout[j] = str[j];
-									return (strout);
-=======
- * _strdup - returns a pointer to a newly allocated space in memory.
- * @str: string.
- * Return: pointer of an array of chars
+/**
+ * *_strdup - return a pointer to a newly allocated space in memory
+ * which contains a copy of the string given as a parameter.
+ * @str: string
+ * Return: 0
  */
+
 char *_strdup(char *str)
 {
-	char *strout;
-	unsigned int i, j;
+	int i = 0, size = 0;
+	char *m;
 
 	if (str == NULL)
 		return (NULL);
-	for (i = 0; str[i] != '\0'; i++)
+
+	for (; str[size] != '\0'; size++)
 		;
-	strout = (char *)malloc(sizeof(char) * (i + 1));
-	if (strout == NULL)
+
+	/*+1 on the size puts the end of string character*/
+	m = malloc(size * sizeof(*str) + 1);
+
+	if (m == 0)
 		return (NULL);
-	for (j = 0; j <= i; j++)
-		strout[j] = str[j];
-	return (strout);
->>>>>>> 19d73b78dd91ac4b242e96e5cd3f8e4b218e9ce6
+	{
+			for (; i < size; i++)
+				m[i] = str[i];
+	}
+	return (m);
+}
 }

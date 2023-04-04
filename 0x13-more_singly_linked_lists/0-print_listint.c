@@ -2,10 +2,10 @@ nclude "lists.h"
 #include <stdio.h>
 
 /**
- *  * print_listint - print elements of linkedlist
- *   * @h: head
- *    * Return: length of a string
- *     */
+ * print_listint - print elements of linkedlist
+ * @h: head
+ * Return: length of a string
+ */
 
 size_t print_listint(const listint_t *h)
 {

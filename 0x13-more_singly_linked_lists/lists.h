@@ -3,8 +3,7 @@
 #include <string.h>
 #include <stdio.h>
 /*
- * struct listint_s - singly linked list
- * Description: 'the programs description'
+ * struct listint_s: singly linked list
  * @n: integer
  * @next: points to the next node
  * Description: singly linked lists

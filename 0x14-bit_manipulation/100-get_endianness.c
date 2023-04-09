@@ -8,8 +8,9 @@
 int get_endianness(void)
 
 {
-	/* 
-	 * the endian term that describes the order in which a sequence of bytes is stored in  memory.
+	/*
+	 * the endian term describes the order
+	 * in which a sequence of bytes is stored in  memory.
 	 */
 	int endianValue = 1;
 	char *y;

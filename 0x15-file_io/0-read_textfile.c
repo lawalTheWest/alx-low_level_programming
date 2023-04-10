@@ -33,27 +33,20 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	}
 
 	readLetters = read(workFile, buffer, letters);
-
 	if (readLetters == -1)
 	{
 		return (0);
 	}
-
 	printedLetters = write(STDOUT_FILENO, buffer, readLetters);
-
 	if (printedLetters == -1)
 	{
 		return (0);
 	}
-
 	closed = close(workFile);
-
 	if (closed == -1)
 	{
 		return (0);
 	}
-
 	free(buffer);
 	return (readLetters);
-
 }

@@ -14,7 +14,7 @@
 ssize_t read_textfile(const char *filename, size_t letters)
 
 {
-	int workFile, lprint, lread, closed;
+	int workFile, printedLetters, readLetters, closed;
 	char *buffer;
 
 	workFile = printedLetters = readLetters = 0;

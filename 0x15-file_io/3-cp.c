@@ -7,7 +7,7 @@ void close_file(int fd);
 
 /**
  * create_buffer - Allocates 1024 bytes to buffer.
- * @file: The file name buffer is storing chars for.
+ * @fileName: The file name buffer is storing chars for.
  * Return: points to the newly-allocated buffer.
  */
 
@@ -70,8 +70,7 @@ int main(int argc, char *argv[])
 	readFile = read(openFrom, buffer, 1024);
 	to = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
 
-	do
-	{
+	do {
 		if (openFrom == -1 || readFile == -1)
 		{
 			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);

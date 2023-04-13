@@ -77,14 +77,14 @@ int main(int argc, char *argv[])
 			free(buffer);
 			exit(98);
 		}
-		writeToFile = write(to, buffer, r);
+		writeToFile = write(to, buffer, readFile);
 		if (to == -1 || writeToFile == -1)
 		{
 			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 			free(buffer);
 			exit(99);
 		}
-		readFile = read(from, buffer, 1024);
+		readFile = read(openFrom, buffer, 1024);
 		to = open(argv[2], O_WRONLY | O_APPEND);
 	} while (readFile > 0);
 	free(buffer);

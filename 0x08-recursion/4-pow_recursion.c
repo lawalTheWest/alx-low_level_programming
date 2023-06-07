@@ -9,8 +9,7 @@
 
 int _pow_recursion(int x, int y)
 {
-	int counter;
-	int result = 1;
+	int pow;
 
 	if (y < 0)
 	{
@@ -19,11 +18,15 @@ int _pow_recursion(int x, int y)
 	} /* end if */
 	else
 	{
-		for (counter = 1; counter <= y; counter += 1)
+		if (y == 0)
 		{
-			result *= x;
-		} /* end for */
-
-		return (result);
+			return (1);
+		} /* end if */
+		else
+		{
+			pow = x;
+			pow *= _pow_recursion(x, y -= 1);
+		} /* end else */
+		return (pow);
 	} /* end else */
 } /* End function */

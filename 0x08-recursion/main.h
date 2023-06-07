@@ -25,14 +25,22 @@ void _print_rev_recursion(char *s);
  * task #2
  */
 int _strlen_recursion(char *s);
+
 /*
  * Prototype of a function 
  * that returns the factorial 
  * of a given number
  * task #3
  */
-
 int factorial(int n);
 
+
+/*
+ * Prototype of a function
+ * that returns the value
+ * of a x raised to the power of y
+ * task #4
+ */
+int _pow_recursion(int x, int y);
 
 #endif

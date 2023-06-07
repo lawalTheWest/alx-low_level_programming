@@ -8,7 +8,7 @@ void _print_rev_recursion(char *s)
 {
 	if (*s)
 	{
-		/* 
+		/*
 		 * the recursive call happens
 		 * untill the last char is reached
 		 */

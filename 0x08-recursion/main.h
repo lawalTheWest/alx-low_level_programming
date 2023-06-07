@@ -20,5 +20,11 @@ void _puts_recursion(char *s);
  */
 void _print_rev_recursion(char *s);
 
+/*
+ * prototype of a function that returns the length of a string.
+ * task #2
+ */
+int _strlen_recursion(char *s);
+
 
 #endif

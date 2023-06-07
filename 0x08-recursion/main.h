@@ -3,6 +3,7 @@
 
 /*
  * prototype of a custom putchar function
+ * for all the necessary printing
  */
 int _putchar(char c);
 

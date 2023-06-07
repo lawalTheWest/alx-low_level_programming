@@ -1,5 +1,5 @@
 #include "main.h"
-/* Using the preprocessor to define boolean */
+/* Using the macros to define boolean */
 #define bool int
 #define ERROR -1
 /**

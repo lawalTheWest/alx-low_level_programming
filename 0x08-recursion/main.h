@@ -43,4 +43,17 @@ int factorial(int n);
  */
 int _pow_recursion(int x, int y);
 
+/* #5 */
+int _sqrt_recursion(int n);
+int find_sqrt(int num, int root);
+
+/* Task #6 */
+int check_prime(int n, int divisor);
+int is_prime_number(int n);
+
+/* Task #7 */
+int _strlen(char s);
+int _palindrome_truthfullness(char *s, int lenght, int counter);
+int is_palindrome(char *s);
+
 #endif

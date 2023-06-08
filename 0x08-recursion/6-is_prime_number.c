@@ -3,12 +3,14 @@
 #define ERROR -1
 #define true 1
 #define false 0
+/* prototype */
+int check_prime(int n, int divisor);
+
 /**
  * is_prime_number - entry point
  * Return: values
  * @n: the user value
  */
-int check_prime(int n, int divisor);
 
 int is_prime_number(int n)
 {
@@ -31,8 +33,8 @@ int is_prime_number(int n)
 /**
  * check_prime - supplimentary code
  * Return: values
- * @n:  value
- * @divisor: divisor
+ * @n:  'value'
+ * @divisor: the divide value
  */
 int check_prime(int n, int divisor)
 {

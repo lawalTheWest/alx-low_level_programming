@@ -4,6 +4,7 @@
 #define true 1
 #define ERROR -1
 
+/* Prototypes */
 int find_sqrt(int num, int root);
 
 /**
@@ -15,27 +16,26 @@ int find_sqrt(int num, int root);
 
 int _sqrt_recursion(int n)
 {
-        int root = 0;
+	int root = 0;
 
 	/* handling negative numbers */
-        if (n < 0)
+	if (n < 0)
 	{
-                return (ERROR);
-	}  /* end if */
+		return (ERROR);
+	} /* end if */
 	else if (n == 0)
 	{
 		return (false);
 	} /* end else if */
 	else if (n == 1)
 	{
-                return (true);
+		return (true);
 	} /* end else if */
 	else
 	{
-        return (find_sqrt(n, root));
+		return (find_sqrt(n, root));
 	} /* end else */
-
-}
+} /* end function */
 
 
 /**
@@ -45,17 +45,15 @@ int _sqrt_recursion(int n)
  * Return: defined boolean
  */
 int find_sqrt(int num, int root)
-
 {
-        if ((root * root) == num)
+	if ((root * root) == num)
 	{
-                return (root);
+		return (root);
 	} /* end if */
-        if (root == num / 2)
+	if (root == num / 2)
 	{
-                return (ERROR);
-	}/* end if */
+		return (ERROR);
+	} /* end if */
 
-        return (find_sqrt(num, root + 1));
-
-}
+	return (find_sqrt(num, root + 1));
+} /* End function */

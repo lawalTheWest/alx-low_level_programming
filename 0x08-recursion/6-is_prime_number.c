@@ -18,11 +18,11 @@ int is_prime_number(int n)
 	if (n < 0)
 	{
 		/* negative values are not allowed */
-		return (ERROR);
+		return (false);
 	} /* end if */
-	else if (n <= 3)
+	else if (n < 2)
 	{
-		return (true);
+		return (false);
 	} /* end else if */
 	else
 	{

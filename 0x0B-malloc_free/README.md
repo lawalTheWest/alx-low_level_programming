@@ -1,5 +1,9 @@
 <h1> 0x0B. C - malloc, free </h1>
-Dynamic memory allocation is a fundamental concept in programming, and C provides two important functions, `malloc()` and `free()`, to manage memory dynamically.
+
+Dynamic memory allocation is a fundamental concept in programming, and C provides two important functions:
+- `malloc()` and
+- `free()`,
+to manage memory dynamically.
 These functions are declared in the `<stdlib.h>` header file.
 
 The `malloc()` function, short for <b>memory allocation,</b> is used to allocate a block of memory during program execution.

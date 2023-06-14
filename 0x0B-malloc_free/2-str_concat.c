@@ -54,11 +54,11 @@ char *str_concat(char *s1, char *s2)
  */
 int _strlen(char *s)
 {
-        int strLenght;
+	int strLenght;
 
-        while (s[strLenght] != 0)
-        {
-                strLenght++;
-        } /* end while */
-        return (strLenght);
+	while (s[strLenght] != 0)
+	{
+		strLenght++;
+	} /* end while */
+	return (strLenght);
 } /* End function */

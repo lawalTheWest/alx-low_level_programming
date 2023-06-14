@@ -16,7 +16,7 @@ char *_strdup(char *str)
 	/* validate parameters */
 	if (str == NULL)
 	{
-		return (ERROR);
+		return (NULL);
 	} /* End if*/
 	while (str[size] != '\n')
 	{
@@ -28,7 +28,7 @@ char *_strdup(char *str)
 	/*validating contents of strPtr */
 	if (strPtr == 0)
 	{
-		return (ERROR);
+		return (NULL);
 	} /* end if */
 
 	/*

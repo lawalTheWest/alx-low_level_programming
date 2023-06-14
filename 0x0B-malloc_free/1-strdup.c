@@ -35,7 +35,7 @@ char *_strdup(char *str)
 	 * initialize the index location
 	 * of strPtr = index values of str
 	 */
-	while ()
+	while (i < size)
 	{
 		strPtr[i] = str[i];
 		i++;

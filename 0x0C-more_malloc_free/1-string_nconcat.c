@@ -20,26 +20,18 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (s1 != NULL)
 	{
 		while (s1[w] != '\0')
-		{
-			w++;
-		}/* end while */
+			w++; /* end while */
 	} /* end if */
 	if (s2 != NULL)
 	{
 		while (s2[x] != '\0')
-		{
-			x++;
-		} /* end while */
+			x++; /* end while */
 	} /* end if */
 	if (n >= x)
-	{
-		n = x;
-	} /* end if */
+		n = x; /* end if */
 	ptr = malloc(w + n + 1 * sizeof(char));
 	if (ptr == NULL)
-	{
-		return (NULL);
-	} /* End if */
+		return (NULL); /* End if */
 	for (; y <= (w - 1); y++)
 	{
 		ptr[w] = s1[z];

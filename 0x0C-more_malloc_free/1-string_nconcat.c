@@ -32,12 +32,12 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	ptr = malloc(w + n + 1 * sizeof(char));
 	if (ptr == NULL)
 		return (NULL); /* End if */
-	for (; y <= (w - 1); y++)
+	for (; y < w; y++)
 	{
 		ptr[w] = s1[z];
 		z++;
 	} /* end for */
-	for (; z <= (n); z++)
+	for (; z < n; z++)
 	{
 		ptr[w] = s2[z];
 		y++;

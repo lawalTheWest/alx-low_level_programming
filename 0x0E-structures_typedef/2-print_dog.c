@@ -13,9 +13,9 @@ void print_dog(struct dog *d)
 			"Age: %f\n"
 			"Owner: %s\n",
 			/* Validating parameters */
-			((*d).name != NULL ? d -> name : "(nil)"),
+			((*d).name != NULL ? d->name : "(nil)"),
 			 (*d).age,
-			 ((*d).owner != NULL ? d -> owner : "(nil)")
+			 ((*d).owner != NULL ? d->owner : "(nil)")
 			);
-	}/* End if */
+	} /* End if */
 } /* End function */

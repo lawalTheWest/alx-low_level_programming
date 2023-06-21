@@ -63,6 +63,38 @@ Additionally, function pointers can be used to implement data structures like fu
 - mismatching function signatures.
 It's essential to ensure the pointer is valid and the function signature matches the expected type to prevent `runtime errors`.
 
+
+<b> Example on how to use the function pointer </b>
+
+```
+#include <stdio.h>
+/**
+ * print_my_initial - Entry point
+ * @name: my initial (argument of type char)
+ * Return type is null
+ */
+void print_my_initial(char name)
+{
+    	printf("%c", name);
+} /* End function */
+
+int main(void)
+{
+	/* Declare function pointer */
+	void (*taj_Func_Ptr)(char);
+	
+	/* Assign address of print_my_initial to the function pointer */
+    	taj_Func_Ptr = print_my_initial;
+
+	/* call the funtion print_my_initial through the function pointer */
+    	(*taj_Func_Ptr)('T');
+
+    return 0;
+}
+
+```
+
+
 <em>
 Conclusively, as a research based individual, I see function pointers in C as the force with the power to offer a versatile and powerful mechanism for dynamic programming.
 </em>

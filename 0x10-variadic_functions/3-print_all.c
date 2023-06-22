@@ -36,14 +36,19 @@ void print_str(va_list args)
 	char *s = va_arg(args, char *);
 
 	/* Validating argument */
-	if (s == NULL)
-	{
-		printf("(nil)");
-	} /* end if */
-	else
-	{
-		printf("%s", s);
-	} /* end else */
+
+	s == NULL ? printf("(nil)") : printf("%s", s);
+	/*
+	 * if (s == NULL)
+	 * {
+	 * printf("(nil)");
+	 * } end if
+	 * else
+	 * {
+	 * printf("%s", s);
+	 * } * end else
+	*/
+
 } /* End function */
 
 /**

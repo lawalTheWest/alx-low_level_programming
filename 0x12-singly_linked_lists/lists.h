@@ -1,5 +1,5 @@
-#ifndef HEADER_FILE
-#define HEADER_FILE
+#ifndef LISTS_H
+#define LISTS_H
 
 /**
  * struct list_s - singly linked list

@@ -24,6 +24,7 @@ struct Node
 
 <h4> Singly Linked List Manipulation </h4>
 To manipulate a singly linked list in C, you typically need to perform operations such as:
+
 - Inserting a new node.
 - Deleting a node.
 - Searching for a particular value. and

@@ -23,7 +23,7 @@ size_t print_list(const list_t *h)
 		} /* End else */
 		h = h->next;
 		s++;
-        } /* End while */
+	} /* End while */
 
 	return (s);
 } /* End function */

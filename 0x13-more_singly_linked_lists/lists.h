@@ -4,14 +4,14 @@
 #include <string.h>
 
 /**
- * struct listint_s: structure (linked list)
+ * struct listint_s - structure (linked list)
  * @n: integer
- * @node: a pointer to the next node.
+ * @next: a pointer to the next node.
  */
 typedef struct listint_s
 {
-        int n;
-        struct listint_s *next;
+	int n;
+	struct listint_s *next;
 } listint_t;
 size_t print_listint(const listint_t *h);
 

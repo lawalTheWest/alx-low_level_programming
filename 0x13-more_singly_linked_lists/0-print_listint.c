@@ -11,11 +11,12 @@ size_t print_listint(const listint_t *h)
 
 	const listint_t *myValue = h;
 
-	do {
+	while (myValue != NULL)
+	{
 		printf("%i\n", myValue->n);
 		myValue = myValue->next;
 		nodes_counter++;
-	} while (myValue != NULL); /* End do while */
+	} /* End do while */
 
 	return (nodes_counter);
 } /* end function */

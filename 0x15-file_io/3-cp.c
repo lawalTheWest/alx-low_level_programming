@@ -11,7 +11,7 @@ int main(int argc, char *argv[])
 	int open_from;
 	int to;
 	int read_file;
-	int write_to_File;
+	int write_to_file;
 	char *buffer;
 
 	/* if the number of argument is not the correct one, exit with code 97 */

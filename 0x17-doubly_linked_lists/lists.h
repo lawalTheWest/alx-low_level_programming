@@ -6,6 +6,12 @@
 #include <stdlib.h>
 
 /* The STRUCT type to create a node */
+/**
+ * struct dlistint_s - Entry point
+ * @n: the struct data (integer)
+ * @prev: a pointer to the previous node
+ * @next: a pointer to next node
+ */
 typedef struct dlistint_s
 {
 	int n;

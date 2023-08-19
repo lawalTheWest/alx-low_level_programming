@@ -14,7 +14,7 @@ dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 
 	hold_me = head->next;
 
-	while (!(index == node_counter))
+	for (; !(index == node_counter); node_counter++)
 	{
 		if (head == NULL)
 		{
@@ -22,7 +22,6 @@ dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 		} /* End if */
 		hold_me = head->next;
 		head = hold_me;
-		node_counter += 1;
 	} /* end if */
 
 	return (hold_me);

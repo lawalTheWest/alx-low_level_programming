@@ -14,16 +14,14 @@ dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 
 	hold_me = head->next;
 
-	/* Validate parameters */
-	if (head == NULL)
-	{
-		return (NULL);
-	} /* end if */
-
 	if (!(index == node_counter))
 	{
 		while (!(index == node_counter))
 		{
+			if (head == NULL)
+			{
+				return (NULL);
+			} /* End if */
 			hold_me = head->next;
 			head = hold_me;
 			node_counter += 1;
@@ -34,4 +32,5 @@ dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 	{
 		return (hold_me);
 	} /* End else */
+
 } /* END FUNCTION */

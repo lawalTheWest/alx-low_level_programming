@@ -12,8 +12,6 @@ dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 	unsigned int node_counter = 0;
 	dlistint_t *hold_me;
 
-	hold_me = head->next;
-
 	for (; !(index == node_counter); node_counter++)
 	{
 		if (head == NULL)

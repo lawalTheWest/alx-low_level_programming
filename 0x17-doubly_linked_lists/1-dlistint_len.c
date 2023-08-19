@@ -1,6 +1,9 @@
 #include "lists.h"
 /**
+ * dlistint_len - Entry point
+ * @h: pointer to the first node (head)
  *
+ * Return: number of elements in the dlistint_t
  */
 size_t dlistint_len(const dlistint_t *h)
 {

@@ -22,5 +22,7 @@ typedef struct dlistint_s
 /* Task 0 */
 size_t print_dlistint(const dlistint_t *h);
 
+/* Task 1 */
+size_t dlistint_len(const dlistint_t *h);
 
 #endif

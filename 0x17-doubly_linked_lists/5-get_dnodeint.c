@@ -9,19 +9,16 @@
 
 dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 {
-	unsigned int node_counter;
-	dlistint_t *hold_me;
-
-	for (node_counter = 0; index != node_counter; node_counter++)
+	for (; index != 0; index--)
 	{
 		if (head == NULL)
 		{
 			return (NULL);
 		} /* End if */
-		hold_me = head->next;
-		head = hold_me;
+
+		head = head->next;
 	} /* end if */
 
-	return (hold_me);
+	return (head);
 
 } /* END FUNCTION */

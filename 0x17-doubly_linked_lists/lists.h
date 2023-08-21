@@ -46,8 +46,15 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n);
 /* Task 8 */
 int delete_dnodeint_at_index(dlistint_t **head, unsigned int index);
 
+/* Task 10 */
+
 /* The palindrome */
-typedef struct
+/**
+ * struct Struct - Entry point
+ * @if1: data for the first range value
+ * @if2: data for the last range value
+ */
+typedef struct Struct
 {
 	int if1;
 	int if2;

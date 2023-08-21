@@ -46,7 +46,18 @@ int find_largest_palindrome(int digit_count)
 
 Range search_digit_count(int digit_count)
 {	Range range;
+	int counter;
 
+	range.if1 = 1;
+	range.if2 = 10;
+
+	for (counter = 2; counter <= digit_count; counter++)
+	{
+		range.if1 *= 10;
+		range.if2 *= 10;
+	} /* End for */
+
+	/*
 	switch (digit_count)
 	{
 		case 2:
@@ -84,6 +95,6 @@ Range search_digit_count(int digit_count)
 		default:
 			printf("Value entered is too few my dear User\n");
 			break;
-	} /* end switch statements */
+	} * end switch statements */
 	return (range);
 } /* End function */

@@ -45,7 +45,8 @@ int find_largest_palindrome(int digit_count)
 
 
 Range search_digit_count(int digit_count)
-{	Range range;
+{
+	Range range;
 	int counter;
 
 	range.if1 = 1;
@@ -57,44 +58,5 @@ Range search_digit_count(int digit_count)
 		range.if2 *= 10;
 	} /* End for */
 
-	/*
-	switch (digit_count)
-	{
-		case 2:
-			range.if1 = 10;
-			range.if2 = 100;
-			break;
-		case 3:
-			range.if1 = 100;
-			range.if2 = 1000;
-			break;
-		case 4:
-			range.if1 = 1000;
-			range.if2 = 10000;
-			break;
-		case 5:
-			range.if1 = 10000;
-			range.if2 = 100000;
-			break;
-		case 6:
-			range.if1 = 100000;
-			range.if2 = 1000000;
-			break;
-		case 7:
-			range.if1 = 1000000;
-			range.if2 = 10000000;
-			break;
-		case 8:
-			range.if1 = 10000000;
-			range.if2 = 100000000;
-			break;
-		case 9:
-			range.if1 = 100000000;
-			range.if2 = 1000000000;
-			break;
-		default:
-			printf("Value entered is too few my dear User\n");
-			break;
-	} * end switch statements */
 	return (range);
 } /* End function */

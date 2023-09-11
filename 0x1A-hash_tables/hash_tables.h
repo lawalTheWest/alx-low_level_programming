@@ -3,7 +3,7 @@
 
 #include <stdlib.h>
 #include <stdio.h>
-
+#include <string.h>
 /**
  * struct hash_node_s - Node of a hash table
  *
@@ -42,6 +42,10 @@ unsigned long int hash_djb2(const unsigned char *str);
 
 /* Task #2 */
 unsigned long int key_index(const unsigned char *key, unsigned long int size);
+
+/* Task #3 */
+int hash_table_set(hash_table_t *ht, const char *key, const char *value);
+hash_node_t *create_node(const char *key, const char *value);
 
 
 #endif

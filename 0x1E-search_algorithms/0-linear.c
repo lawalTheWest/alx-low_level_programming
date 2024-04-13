@@ -1,5 +1,12 @@
 #include "search_algos.h"
 
+/**
+ * linear_search: the function that searches using a linear search algo.
+ * @array:
+ * @size:
+ * @value:
+ * Return: 
+ */
 
 int linear_search(int *array, size_t size, int value)
 {
